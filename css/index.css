@@ -273,6 +273,7 @@ img{display: block;}
     }
 
     /* 그림자 hover */
+    /* 스크롤 할 때 각 section에 그림자 추가 */
     .section .section-ticket.shadow-hover::before{
         content: '';
         position: absolute;
