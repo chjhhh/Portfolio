@@ -4,27 +4,18 @@ $(document).ready(function(){
         if($(this).scrollTop() > 600){
             $('header').fadeIn();
             $('.top').fadeIn();
-            $('.pc-shortcut').fadeIn();
+            $('.pc-shortcut').fadeIn(); // pc에서만 보이게
         } else{
             $('header').fadeOut();
             $('.top').fadeOut();
-            $('.pc-shortcut').fadeOut();
+            $('.pc-shortcut').fadeOut(); // 수정해야 됨
         }
     });
 
     // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
-    /* $(window).scroll(function(){
-        if($(this).scrollTop() > 800){
-            $('.section-ticket.Gongcha').addClass('shadow-hover');
-        } else if($(this).scrollTop() > 820){
-            $('.section-ticket.Gongcha').removeClass('shadow-hover');
-            $('.section-ticket.Starbucks').addClass('shadow-hover');
-        } else{
-            $('.section-ticket').removeClass('shadow-hover');
-        }
-    }); */
+    
 
-    // pc menu 클릭 시 색상 변경
+    // pc menu 클릭 시 색상 변경 (완성 X)
     let clicked = true;
     $('.active').click(function(){
         if(clicked){

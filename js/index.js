@@ -16,7 +16,7 @@ menuBtn.addEventListener('click', function(){
 
 
 
-// PC - Menu 클릭 시 색상 변경
+// PC - Menu 클릭 시 색상 변경 (완성 X)
 /* const activeMenu = document.querySelectorAll('.active');
 let active = false;
 activeMenu.addEventListener('click', function(){
