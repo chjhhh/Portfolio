@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 구글 icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- script -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/index2.js"></script> <!--javascript-->
+    <script defer src="js/index.js"></script> <!--jquery-->
+
+</head>
+<body>
+    <header>
+        <!-- pc 버전 상단 메뉴 -->
+        <div class="pc-menu">
+            <a href="#Responsive"><h3 class="active">Responsive</h3></a>
+            <a href="#Clone"><h3 class="active">Clone</h3></a>
+            <a href="#Design"><h3 class="active">Design</h3></a>
+            <a href="#About"><h3 class="active">About Me</h3></a>
+        </div>
+        <!-- 모바일 상단 shortcut -->
+        <div class="mo-shortcut">
+            <a href="#"><img src="images/color-GitHub.png" alt="GitHub"></a>
+        </div>
+
+        <!-- 모바일 메뉴 버튼 -->
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 모바일 메뉴(오른쪽에서 나오는 메뉴) -->
+        <nav class="mo-menu">
+            <ul> <!-- 해당 section으로 갈 수 있도록 # -->
+                <li class="menuGo"><a href="#Responsive">Responsive</a></li>
+                <li class="menuGo"><a href="#Clone">Clone</a></li>
+                <li class="menuGo"><a href="#Design">Design</a></li>
+                <li class="menuGo"><a href="#About">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- margin : auto -->
+    <div class="wrap">
+        <section class="main">
+            <h2 class="hidden">Portfolio</h2>
+            <div class="main-ticket"> <!--포트폴리오 첫 화면에 보이는 티켓-->
+                <div class="img-bg"> <!--티켓 중 왼쪽, 이미지와 텍스트, 호버 시 깃허브 아이콘-->
+                    <img src="images/main-img.PNG" alt="mainImg">
+                    <div class="img-text"> 
+                        <a href="#Responsive">
+                            <h3>포트폴리오</h3>
+                            <h4>Portfolio</h4>
+                        </a>
+                    </div>
+                    
+                    <!-- 호버 시 아이콘 보임 -->
+                    <div class="social">
+                        <a href="#Responsive" class="github"><img src="images/white-GitHub.png" alt="GitHub"></a>
+                    </div>
+                </div>
+                <div class="white"> <!--티켓 중 오른쪽, 이름과 호버 시 나오는 아이콘-->
+                    <p>
+                        천지희 <br>
+                        Cheon ji hee
+                    </p>
+                    <a href="#Responsive"><div class="circle"></div></a>
+                    <div class="mo-right">
+                        <a href="#Responsive"><span class="material-icons">arrow_downward</span></a>
+                    </div>
+                    <div class="pc-right">
+                        <a href="#Responsive"><span class="material-icons">arrow_forward</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 반응형 웹사이트 : 공차 -->
+        <section class="main section Gongcha" id="Responsive">
+            <div class="text">
+                <h2>Responsive Web 1.</h2>
+                <p>공차</p>
+            </div>
+            <div class="section-ticket">
+                <div class="one"> <!-- 티켓 중 왼쪽, 이미지와 구성 -->
+                    <img src="images/Gongcha_Thumbnail.png" alt="Gongcha_Thumbnail">
+                    <p>PC 메인 페이지만 구성되어 있습니다.</p>
+                </div>
+                <div class="line"></div> <!-- 오른쪽과 왼쪽을 분리해주는 선 -->
+                <div class="two"> <!-- 티켓 중 오른쪽, 정보와 페이지 버튼 -->
+                    <div class="two-text"> <!-- 텍스트 정보 -->
+                        <div>
+                            <h5>기술</h5>
+                            <p>HTML, CSS, JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <h5>디자인</h5>
+                            <p>Figma</p>
+                        </div>
+                        <div class="two-div">
+                            <div>
+                                <h5>제작 기간</h5>
+                                <p>2주</p>
+                            </div>
+                            <div>
+                                <h5>기여도</h5>
+                                <p>본인 100%</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>사이트 유형</h5>
+                            <p>반응형 웹사이트</p>
+                        </div>
+                    </div>
+                    <div class="button"> <!-- 페이지 이동 버튼 -->
+                        <a href="#">GitHub</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PC형 웹사이트 : 스타벅스 -->
+        <section class="main section Starbucks" id="Clone">
+            <div class="text">
+                <h2>Clone Coding Web 1.</h2>
+                <p>Starbucks 스타벅스</p>
+            </div>
+            <div class="section-ticket">
+                <div class="one"> <!-- 티켓 중 왼쪽, 이미지와 구성 -->
+                    <img src="images/Gongcha_Thumbnail.png" alt="Gongcha_Thumbnail">
+                    <p>PC 메인 페이지만 구성되어 있습니다.</p>
+                </div>
+                <div class="line"></div> <!-- 오른쪽과 왼쪽을 분리해주는 선 -->
+                <div class="two"> <!-- 티켓 중 오른쪽, 정보와 페이지 버튼 -->
+                    <div class="two-text"> <!-- 텍스트 정보 -->
+                        <div>
+                            <h5>기술</h5>
+                            <p>HTML, CSS, JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <h5>디자인</h5>
+                            <p>Figma</p>
+                        </div>
+                        <div class="two-div">
+                            <div>
+                                <h5>제작 기간</h5>
+                                <p>2주</p>
+                            </div>
+                            <div>
+                                <h5>기여도</h5>
+                                <p>본인 100%</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>사이트 유형</h5>
+                            <p>PC형 웹사이트</p>
+                        </div>
+                    </div>
+                    <div class="button"> <!-- 페이지 이동 버튼 -->
+                        <a href="#">GitHub</a>
+                        <a href="#">Site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PC형 웹사이트 :  -->
+        <section class="main section Clone">
+            <div class="text">
+                <h2>Clone Coding Web 2.</h2>
+                <p>Page</p>
+            </div>
+            <div class="section-ticket">
+                <div class="one"> <!-- 티켓 중 왼쪽, 이미지와 구성 -->
+                    <img src="images/Gongcha_Thumbnail.png" alt="Gongcha_Thumbnail">
+                    <p>PC 메인 페이지만 구성되어 있습니다.</p>
+                </div>
+                <div class="line"></div> <!-- 오른쪽과 왼쪽을 분리해주는 선 -->
+                <div class="two"> <!-- 티켓 중 오른쪽, 정보와 페이지 버튼 -->
+                    <div class="two-text"> <!-- 텍스트 정보 -->
+                        <div>
+                            <h5>기술</h5>
+                            <p>HTML, CSS, JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <h5>디자인</h5>
+                            <p>Figma</p>
+                        </div>
+                        <div class="two-div">
+                            <div>
+                                <h5>제작 기간</h5>
+                                <p>2주</p>
+                            </div>
+                            <div>
+                                <h5>기여도</h5>
+                                <p>본인 100%</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>사이트 유형</h5>
+                            <p>PC형 웹사이트</p>
+                        </div>
+                    </div>
+                    <div class="button"> <!-- 페이지 이동 버튼 -->
+                            <a href="#">GitHub</a>
+                            <a href="#">Site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI/UX : 독서어플 -->
+        <section class="main section UI" id="Design">
+            <div class="text">
+                <h2>UI/UX Design 1.</h2>
+                <p>독서어플</p>
+            </div>
+            <div class="section-ticket">
+                <div class="one"> <!-- 티켓 중 왼쪽, 이미지와 구성 -->
+                    <img src="images/Gongcha_Thumbnail.png" alt="Gongcha_Thumbnail">
+                </div>
+                <div class="line"></div> <!-- 오른쪽과 왼쪽을 분리해주는 선 -->
+                <div class="two"> <!-- 티켓 중 오른쪽, 정보와 페이지 버튼 -->
+                    <div class="two-text"> <!-- 텍스트 정보 -->
+                        <div>
+                            <h5>기술</h5>
+                            <p>HTML, CSS, JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <h5>디자인</h5>
+                            <p>Figma</p>
+                        </div>
+                        <div class="two-div">
+                            <div>
+                                <h5>제작 기간</h5>
+                                <p>2주</p>
+                            </div>
+                            <div>
+                                <h5>기여도</h5>
+                                <p>본인 100%</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>UIUX</h5>
+                            <p>독서어플 - 위드북</p>
+                        </div>
+                    </div>
+                    <div class="button-one"> <!-- 페이지 이동 버튼 -->
+                            <a href="#">Panel Design</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 소개 페이지 -->
+        <section class="main section Me" id="About">
+            <div class="text">
+                <h2>About Me</h2>
+            </div>
+            <div class="section-ticket">
+                <div class="one"> <!-- 티켓 중 왼쪽, 이미지와 구성 -->
+                    <img src="images/Gongcha_Thumbnail.png" alt="Gongcha_Thumbnail">
+                </div>
+                <div class="line"></div> <!-- 오른쪽과 왼쪽을 분리해주는 선 -->
+                <div class="two about"> <!-- 티켓 중 오른쪽, 정보 -->
+                    <div class="two-div"> <!-- 텍스트 정보 -->
+                        <div>
+                            <h5>Profile</h5>
+                            <p>
+                                천지희 <br>
+                                2000.02.16
+                            </p>
+                        </div>
+                        <div>
+                            <h5>Contact</h5>
+                            <p>
+                                010-1234-5678 <br>
+                                naver@naver.com
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Certificate</h5>
+                        <p>GTQ포토샵 1급</p>
+                    </div>
+                    <div>
+                        <h5>Education</h5>
+                        <ul>
+                            <li>2022.05 안산그린컴퓨터
+                                (PWA 프론트엔드 개발 과정)
+                                수료</li>
+                            <li>2021.02 안산대학교 졸업</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Skil</h5>
+                        <ul class="skil">
+                            <li><img src="images/skil_html.png" alt="skil_html"></li>
+                            <li><img src="images/skil_css.png" alt="skil_css"></li>
+                            <li><img src="images/skil_javascript.png" alt="skil_javascript"></li>
+                            <li><img src="images/skil_react.png" alt="skil_react"></li>
+                            <li><img src="images/skil_sass.png" alt="skil_sass"></li>
+                            <li><img src="images/skil_jquery.png" alt="skil_jquery"></li>
+                            <li><img src="images/skil_figma.png" alt="skil_figma"></li>
+                            <li><img src="images/skil_photoshop.png" alt="skil_photoshop"></li>
+                            <li><img src="images/skil_Illustrator.png" alt="skil_Illustrator"></li>
+                            <li><img src="images/skil_styled-components.png" alt="skil_styled-components"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- top버튼 / PC 깃허브 이동 버튼 -->
+    <a href="#">
+        <div class="top">
+            <span class="material-icons">arrow_upward</span>
+        </div>
+        <div class="pc-shortcut">
+            <a href="#"><img src="images/beige-GitHub.png" alt="GitHub"></a>
+        </div>
+    </a>
+    
+</body>
+</html>
