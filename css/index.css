@@ -82,6 +82,14 @@ img{display: block;}
     .menu-btn span:nth-child(2){
         margin: 5px 0;
     }
+    /* toggle js */
+    .toggle1.active{
+        transform: translateY(5px) rotate(-47deg);
+    }
+    .toggle2.active{opacity: 0;}
+    .toggle3.active{
+        transform: translateY(-9px) rotate(47deg);
+    }
 
     /* mobile 메뉴 */
     .mo-menu{
@@ -99,7 +107,16 @@ img{display: block;}
     .mo-menu.show{
         right: 0;
     }
-    .mo-menu .menuGo.color{
+    .mo-menu .menuGo1.color{
+        color: #6868AC;
+    }
+    .mo-menu .menuGo2.color{
+        color: #6868AC;
+    }
+    .mo-menu .menuGo3.color{
+        color: #6868AC;
+    }
+    .mo-menu .menuGo4.color{
         color: #6868AC;
     }
     
@@ -573,7 +590,7 @@ img{display: block;}
         margin: 0 40px;
         color: #1E1E1E;
     }
-    header .pc-menu .active.color{
+    header .pc-menu h3.active{
         color: #6868AC;
     }
 

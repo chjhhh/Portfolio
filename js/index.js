@@ -3,12 +3,23 @@ const menuBtn = document.querySelector('.menu-btn');
 const moMenu = document.querySelector('.mo-menu');
 let isHideMenu = false;
 
+// 햄버거 메뉴
+const toggle1 = document.querySelector('.toggle1');
+const toggle2 = document.querySelector('.toggle2');
+const toggle3 = document.querySelector('.toggle3');
+
 menuBtn.addEventListener('click', function(){
     isHideMenu = !isHideMenu;
     if(isHideMenu){
         moMenu.classList.add('show');
+        toggle1.classList.add('active');
+        toggle2.classList.add('active');
+        toggle3.classList.add('active');
     } else{
         moMenu.classList.remove('show');
+        toggle1.classList.remove('active');
+        toggle2.classList.remove('active');
+        toggle3.classList.remove('active');
     }
 });
 
@@ -17,16 +28,7 @@ menuBtn.addEventListener('click', function(){
 
 
 // PC - Menu 클릭 시 색상 변경 (완성 X)
-/* const activeMenu = document.querySelectorAll('.active');
-let active = false;
-activeMenu.addEventListener('click', function(){
-    active = !active;
-    if(active){
-        activeMenu.classList.add('color');
-    } else{
-        activeMenu.classList.remove('color');
-    }
-}); */
+
 
 // UI/UX modal
 const body = document.querySelector('body');
