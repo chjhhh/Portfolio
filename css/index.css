@@ -34,7 +34,7 @@ img{display: block;}
         margin: auto;
     }
 
-    /* -------------mo - header------------- */
+    /* -------------mobile - header------------- */
     header{
         width: 100%;
         height: 70px;
@@ -46,9 +46,12 @@ img{display: block;}
         z-index: 8;
         display: none;
     }
+    /* pc 메뉴 숨기기 */
     header .pc-menu{
         display: none;
     }
+
+    /* mobile 상단 깃허브 바로가기 */
     header .mo-shortcut{
         width: 35px;
         height: 35px;
@@ -60,6 +63,7 @@ img{display: block;}
         height: 100%;
     }
     
+    /* mobile 메뉴 버튼 */
     .menu-btn{
         width: 30px;
         height: 16px;
@@ -79,6 +83,7 @@ img{display: block;}
         margin: 5px 0;
     }
 
+    /* mobile 메뉴 */
     .mo-menu{
         /* display: none; */
         width: 100%;
@@ -117,7 +122,7 @@ img{display: block;}
         color: #6868AC;
     }
 
-    /* -------------mo - section------------- */
+    /* -------------mobile - section------------- */
     /* mobile section - main-ticket */
     .main{
         width: 100%;
@@ -133,12 +138,12 @@ img{display: block;}
         left: 0;
         right: 0;
         margin: auto;
-        /* box-shadow: 4px 4px 4px #ccc; */
+        box-shadow: 4px 4px 4px #ccc;
         overflow: hidden;
     }
+
+    /* 메인 티켓 중 이미지 부분 */
     .img-bg{
-        /* background: url(../images/main-img.PNG) no-repeat; */
-        /* background-size: cover; */
         width: 100%;
         height: 75%;
         filter: grayscale(100%);
@@ -164,6 +169,8 @@ img{display: block;}
         font-size: 50px;
         color: #fff;
     }
+
+    /* 메인 티켓 중 하얀 배경 */
     .white{
         width: 100%;
         height: 25%;
@@ -172,11 +179,10 @@ img{display: block;}
         /* animation: tearoff 1.5s infinite; */
         transform-origin: 0 100%;
     }
+    /* 하얀 배경 애니메이션 */
     @keyframes tearoff {
         30%   { right:0; } 
         50%   { transform: rotate(3deg);}
-        /* 75%   { right: -25px; }
-        100%  { right:0; }    */
     }
     .white p{
         padding: 5px;
@@ -185,6 +191,8 @@ img{display: block;}
         z-index: 2;
         transition: all 0.4s;
     }
+
+    /* 하얀 배경 중 동그라미 */
     .white .circle{
         width: 40px;
         height: 40px;
@@ -195,6 +203,8 @@ img{display: block;}
         right: 10px;
         transition: all 0.4s ease;
     }
+
+    /* 메인티켓 화살표 */
     .white .pc-right{
         display: none;
     }
@@ -217,23 +227,17 @@ img{display: block;}
     }
 
     /* main-ticket hover */
-    .main-ticket:hover{
-        overflow: hidden;
-    }
-    .main-ticket:hover .circle{
+    .main-ticket:hover .circle{ /* 메인티켓 호버 시 원형 커짐 */
         transform: scale(17);
         mix-blend-mode: hard-light;
     }
     .main-ticket:hover .img-bg{
         filter: none;
     }
-    .main-ticket:hover .white{
+    /* .main-ticket:hover .white{
         animation: none;
-    }
-    /* .main-ticket:hover .white p{
-        color: #fff;
     } */
-    .main-ticket .social{
+    .main-ticket .social{ /* 메인티켓 호버 시 깃허브 아이콘 보임 */
         position: absolute;
         z-index: 3;
         left: 10px;
@@ -244,7 +248,7 @@ img{display: block;}
     }
     .main-ticket:hover .social{
         display: block;
-        transition-delay: 0.4s;
+        /* transition-delay: 0.4s; */
     }
     .main-ticket:hover .white .mo-right{
         display: block;
@@ -290,6 +294,7 @@ img{display: block;}
         box-shadow: none;
     }
 
+    /* 티켓 중 왼쪽, 이미지와 구성 */
     .section .section-ticket .one{
         width: 100%;
         height: 40%;
@@ -302,11 +307,15 @@ img{display: block;}
     .section .section-ticket .one p{
         font-size: 13px;
     }
+
+    /* 오른쪽과 왼쪽을 분리해주는 선 */
     .section .section-ticket .line{
         background-color: #1E1E1E;
         width: 100%;
         height: 1px;
     }
+
+    /* 티켓 중 오른쪽, 정보와 페이지 버튼 */
     .section .section-ticket .two{
         width: 100%;
         height: 55%;
@@ -315,24 +324,27 @@ img{display: block;}
         flex-wrap: wrap;
         align-content: space-between;
     }
+    /* 텍스트 정보 */
     .section .section-ticket .two .two-text{
         width: 100%;
         height: 80%;
     }
-    .section .section-ticket .two .two-text > div{
+    .section .section-ticket .two .two-text > div{ /* 각 div 높이 지정 */
         height: 25%;
     }
     .section .section-ticket .two .two-text p{
         font-size: 14px;
         margin: 2px 0 10px 10px;
     }
-    .section .section-ticket .two .two-div{
+    .section .section-ticket .two .two-div{ /* 제작 기간, 기여도 width 100% */
         display: flex;
         width: 100%;
     }
-    .section .section-ticket .two .two-div > div{
+    .section .section-ticket .two .two-div > div{ /* 제작 기간, 기여도 각 width 50% */
         width: 50%;
     }
+
+    /* 깃허브, 사이트 버튼 */
     .section .section-ticket .two .button{
         width: 100%;
         height: 20%;
@@ -341,6 +353,7 @@ img{display: block;}
         align-items: center;
         /* background: #1E1E1E; */
     }
+    /* 판넬 디자인 버튼처럼 1개의 버튼 */
     .section .section-ticket .two .button-one{
         width: 100%;
     }
@@ -360,6 +373,8 @@ img{display: block;}
         padding: 7px 0;
         transition: all 0.4s;
     }
+
+    /* 버튼 호버 */
     .section .section-ticket .two .button a:hover,
     .section .section-ticket .two .button-one a:hover{
         background: #bebbae;
