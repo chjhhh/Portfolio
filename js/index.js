@@ -27,3 +27,27 @@ activeMenu.addEventListener('click', function(){
         activeMenu.classList.remove('color');
     }
 }); */
+
+// UI/UX modal
+const body = document.querySelector('body');
+const modal = document.querySelector('.modal');
+const open = document.querySelector('.open');
+
+open.addEventListener('click', function(e){
+    e.preventDefault();
+    modal.classList.toggle('show');
+
+    if(modal.classList.contains('show')){
+        body.style.overflow = 'hidden';
+    }
+});
+
+modal.addEventListener('click', function(e){
+    if(e.target === modal){
+        modal.classList.toggle('show');
+
+        if(!modal.classList.contains('show')){
+            body.style.overflow = 'auto';
+        }
+    }
+});
