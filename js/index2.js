@@ -25,30 +25,93 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0}, 400);
     });
 
-    // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경
-    $(window).scroll(function(){
+    // 메인 티켓 클릭 시 Gongcha section으로 부드럽게 이동하기
+    $('.white .circle').click(function(){
+        $('html, body').animate({scrollTop : $('.Gongcha').offset().top}, 400);
+    });
+
+    // PC 메뉴 클릭시 부드럽게 이동하기
+    $('.active1').click(function(){
+        $('html, body').animate({scrollTop : $('.Gongcha').offset().top}, 400);
+    });
+    $('.active2').click(function(){
+        $('html, body').animate({scrollTop : $('.Starbucks').offset().top}, 400);
+    });
+    $('.active3').click(function(){
+        $('html, body').animate({scrollTop : $('.UI').offset().top}, 400);
+    });
+    $('.active4').click(function(){
+        $('html, body').animate({scrollTop : $('.Me').offset().top}, 400);
+    });
+
+
+    // 모바일, 탭, PC 스크롤 시 메뉴 글자 색상 변경
+    // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
+    $(window).on('scroll', function(){
         let scroll = $(this).scrollTop();
-        // const first = $('.first').offset().top;
-        const Gongcha = $('.Gongcha').offset().top;
-        const Starbucks = $('.Starbucks').offset().top;
-        const UI = $('.UI').offset().top;
-        const Me = $('.Me').offset().top;
+        let Gongcha = $('.Gongcha').offset().top;
+        let Starbucks = $('.Starbucks').offset().top;
+        let UI = $('.UI').offset().top;
+        let Me = $('.Me').offset().top;
+
 
         if(scroll >= Gongcha){
-            $('.menuGo1').addClass('color');
-        } else if(scroll >= Starbucks){
-            $('.menuGo2').addClass('color');
-        } else if(scroll >= UI){
-            $('.menuGo3').addClass('color');
-        } else if(scroll >= Me){
-            $('.menuGo4').addClass('color');
+            // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
+            // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo1, .active1').addClass('color').css({'font-weight' : 'bold'})
+            $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo4, .active4').removeClass('color').css({'font-weight' : 'none'})
+
+            // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
+            $('.section.Gongcha .section-ticket').addClass('shadow')
+            $('.section.Starbucks .section-ticket').removeClass('shadow')
+            $('.section.UI .section-ticket').removeClass('shadow')
+            $('.section.Me .section-ticket').removeClass('shadow')
         }
-    })
+        if(scroll >= Starbucks){
+            // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
+            // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo2, .active2').addClass('color').css({'font-weight' : 'bold'})
+            $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo4 .active4').removeClass('color').css({'font-weight' : 'none'})
 
+            // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
+            $('.section.Gongcha .section-ticket').removeClass('shadow')
+            $('.section.Starbucks .section-ticket').addClass('shadow')
+            $('.section.UI .section-ticket').removeClass('shadow')
+            $('.section.Me .section-ticket').removeClass('shadow')
+        }
+        if(scroll >= UI){
+            // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
+            // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo3, .active3').addClass('color').css({'font-weight' : 'bold'})
+            $('.menuGo4 .active4').removeClass('color').css({'font-weight' : 'none'})
 
-    // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
-    
+            // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
+            $('.section.Gongcha .section-ticket').removeClass('shadow')
+            $('.section.Starbucks .section-ticket').removeClass('shadow')
+            $('.section.UI .section-ticket').addClass('shadow')
+            $('.section.Me .section-ticket').removeClass('shadow')
+        }
+        if(scroll >= Me){
+            // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
+            // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo4, .active4').addClass('color').css({'font-weight' : 'bold'})
 
-    // pc menu 클릭 시 색상 변경 (완성 X)
+            // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
+            $('.section.Gongcha .section-ticket').removeClass('shadow')
+            $('.section.Starbucks .section-ticket').removeClass('shadow')
+            $('.section.UI .section-ticket').removeClass('shadow')
+            $('.section.Me .section-ticket').addClass('shadow')
+        }
+    });
+
 
 });

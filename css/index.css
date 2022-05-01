@@ -107,16 +107,16 @@ section.none{display: none;}
     .mo-menu.show{
         right: 0;
     }
-    .mo-menu .menuGo1.color{
+    .mo-menu a.menuGo1.color{
         color: #6868AC;
     }
-    .mo-menu .menuGo2.color{
+    .mo-menu a.menuGo2.color{
         color: #6868AC;
     }
-    .mo-menu .menuGo3.color{
+    .mo-menu a.menuGo3.color{
         color: #6868AC;
     }
-    .mo-menu .menuGo4.color{
+    .mo-menu a.menuGo4.color{
         color: #6868AC;
     }
     
@@ -133,7 +133,7 @@ section.none{display: none;}
     .mo-menu ul li a{
         text-align: center;
         margin: 50px 0;
-        font-size: 17px;
+        font-size: 1.063em; /*17px*/
     }
     .mo-menu ul li a:hover{
         color: #6868AC;
@@ -179,11 +179,11 @@ section.none{display: none;}
         text-align: right;
     }
     .img-bg h3{
-        font-size: 25px;
+        font-size: 1.563em; /*25px*/
         color: #fff;
     }
     .img-bg h4{
-        font-size: 50px;
+        font-size: 3.125em; /*50px*/
         color: #fff;
     }
 
@@ -240,7 +240,7 @@ section.none{display: none;}
     }
     .white .mo-right span{
         color: #fff;
-        font-size: 70px;
+        font-size: 4.375em; /*70px*/
     }
 
     /* main-ticket hover */
@@ -295,7 +295,7 @@ section.none{display: none;}
 
     /* 그림자 hover */
     /* 스크롤 할 때 각 section에 그림자 추가 */
-    .section .section-ticket.shadow-hover::before{
+    .section .section-ticket.shadow::before{
         content: '';
         position: absolute;
         z-index: -1;
@@ -322,7 +322,7 @@ section.none{display: none;}
         height: 95%;
     }
     .section .section-ticket .one p{
-        font-size: 13px;
+        font-size: 0.813em; /*13px*/
     }
 
     /* 오른쪽과 왼쪽을 분리해주는 선 */
@@ -350,7 +350,7 @@ section.none{display: none;}
         height: 25%;
     }
     .section .section-ticket .two .two-text p{
-        font-size: 14px;
+        font-size: 0.875em; /*14px*/
         margin: 2px 0 10px 10px;
     }
     .section .section-ticket .two .two-div{ /* 제작 기간, 기여도 width 100% */
@@ -399,12 +399,21 @@ section.none{display: none;}
     }
 
     /* mobile - About me */
+    section.Me .one .img{
+        height: 100%;
+    }
+    section.Me .one .img img{
+        padding-top: 10px;
+        width: 50%;
+        margin: auto;
+    }
+    
     .about p{
-        font-size: 14px;
+        font-size: 0.875em; /*14px*/
         margin: 2px 0 10px 10px;
     }
     .about ul li{
-        font-size: 14px;
+        font-size: 0.875em; /*14px*/
         margin-left: 10px;
         line-height: 20px;
     }
@@ -441,7 +450,7 @@ section.none{display: none;}
     }
     .top span{
         color: #fff;
-        font-size: 33px;
+        font-size: 2.063em; /*33px*/
     }
     .pc-shortcut{ /*pc에서만 보이게 해야 됨*/
         display: none;
@@ -529,7 +538,7 @@ section.none{display: none;}
     }
     .white .pc-right span{
         color: #fff;
-        font-size: 70px;
+        font-size: 4.375em; /*70px*/
     }
 
     .main-ticket:hover .white .pc-right{
@@ -563,6 +572,18 @@ section.none{display: none;}
         display: flex;
         justify-content: space-around;
     }
+
+    /* tab - About Me */
+    .section.Me .one{
+        width: 40%;
+    }
+    .section.Me .two{
+        width: 60%;
+    }
+    section.Me .one .img img{
+        width: 100%;
+        padding: 50px;
+    }
 } /* Tab - End */
 
 @media all and (min-width:1200px){
@@ -590,7 +611,7 @@ section.none{display: none;}
         margin: 0 40px;
         color: #1E1E1E;
     }
-    header .pc-menu h3.active{
+    header .pc-menu h3.color{
         color: #6868AC;
     }
 
