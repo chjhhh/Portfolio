@@ -107,6 +107,9 @@ section.none{display: none;}
     .mo-menu.show{
         right: 0;
     }
+    .mo-menu.hide{
+        right: -100%;
+    }
     .mo-menu a.menuGo1.color{
         color: #6868AC;
     }
@@ -156,7 +159,7 @@ section.none{display: none;}
         right: 0;
         margin: auto;
         box-shadow: 4px 4px 4px #ccc;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     /* 메인 티켓 중 이미지 부분 */
@@ -175,15 +178,15 @@ section.none{display: none;}
         position: absolute;
         bottom: 10px;
         right: 10px;
-        z-index: 2;
+        z-index: 3;
         text-align: right;
     }
     .img-bg h3{
-        font-size: 1.563em; /*25px*/
+        font-size: 1.875em; /*30px*/
         color: #fff;
     }
     .img-bg h4{
-        font-size: 3.125em; /*50px*/
+        font-size: 3.750em; /*60px*/
         color: #fff;
     }
 
@@ -192,8 +195,9 @@ section.none{display: none;}
         width: 100%;
         height: 25%;
         background: #f0f0f0;
+        cursor: pointer;
 
-        /* animation: tearoff 1.5s infinite; */
+        animation: tearoff 1.5s infinite;
         transform-origin: 0 100%;
     }
     /* 하얀 배경 애니메이션 */
@@ -211,8 +215,8 @@ section.none{display: none;}
 
     /* 하얀 배경 중 동그라미 */
     .white .circle{
-        width: 40px;
-        height: 40px;
+        width: 55px;
+        height: 55px;
         background: #6868AC;
         border-radius: 50%;
         position: absolute;
@@ -231,7 +235,7 @@ section.none{display: none;}
         /* background: #202020; */
         position: absolute;
         bottom: 20px;
-        right: 20px;
+        right: 23px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -244,16 +248,19 @@ section.none{display: none;}
     }
 
     /* main-ticket hover */
-    .main-ticket:hover .circle{ /* 메인티켓 호버 시 원형 커짐 */
-        transform: scale(17);
-        mix-blend-mode: hard-light;
+    .main-ticket:hover{
+        overflow: hidden;
+    }
+    .main-ticket:hover .white{
+        animation: none;
     }
     .main-ticket:hover .img-bg{
-        filter: none;
+        filter: grayscale(50%);
     }
-    /* .main-ticket:hover .white{
-        animation: none;
-    } */
+    .main-ticket:hover .img-bg .img-text{
+        z-index: 3;
+        color: #fff;
+    }
     .main-ticket .social{ /* 메인티켓 호버 시 깃허브 아이콘 보임 */
         position: absolute;
         z-index: 3;
@@ -501,6 +508,12 @@ section.none{display: none;}
         width: 70%;
         height: 100%;
     }
+    .img-bg h3{
+        font-size: 2.500em; /*40px*/
+    }
+    .img-bg h4{
+        font-size: 4.375em; /*40px*/
+    }
     .main-ticket .white{
         width: 30%;
         position: absolute;
@@ -510,10 +523,6 @@ section.none{display: none;}
     }
     .main-ticket .white p{
         writing-mode: vertical-rl;
-    }
-    .main-ticket:hover .circle{
-        transform: scale(25);
-        mix-blend-mode: hard-light;
     }
 
     .white .mo-right{
@@ -528,8 +537,8 @@ section.none{display: none;}
         height: 50px;
         /* background: #202020; */
         position: absolute;
-        bottom: 50px;
-        left: 10px;
+        bottom: 22px;
+        right: 22px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -613,11 +622,6 @@ section.none{display: none;}
     }
     header .pc-menu h3.color{
         color: #6868AC;
-    }
-
-    .main-ticket:hover .circle{
-        transform: scale(32);
-        mix-blend-mode: hard-light;
     }
 
     .main,

@@ -12,11 +12,15 @@ menuBtn.addEventListener('click', function(){
     isHideMenu = !isHideMenu;
     if(isHideMenu){
         moMenu.classList.add('show');
+
+        // 햄버거 메뉴
         toggle1.classList.add('active');
         toggle2.classList.add('active');
         toggle3.classList.add('active');
     } else{
         moMenu.classList.remove('show');
+
+        // 햄버거 메뉴
         toggle1.classList.remove('active');
         toggle2.classList.remove('active');
         toggle3.classList.remove('active');
@@ -24,10 +28,23 @@ menuBtn.addEventListener('click', function(){
 });
 
 // 모바일, 탭 - 메뉴 클릭 시 슬라이드 닫히고 메뉴로 이동
+const menuGo1 = document.querySelector('.menuGo1');
+const menuGo2 = document.querySelector('.menuGo2');
+const menuGo3 = document.querySelector('.menuGo3');
+const menuGo4 = document.querySelector('.menuGo4');
 
-
-
-// PC - Menu 클릭 시 색상 변경 (완성 X)
+menuGo1.addEventListener('click', function(){
+    moMenu.classList.add('hide');
+});
+menuGo2.addEventListener('click', function(){
+    moMenu.classList.add('hide');
+});
+menuGo3.addEventListener('click', function(){
+    moMenu.classList.add('hide');
+});
+menuGo4.addEventListener('click', function(){
+    moMenu.classList.add('hide');
+});
 
 
 // UI/UX modal

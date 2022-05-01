@@ -26,21 +26,21 @@ $(document).ready(function(){
     });
 
     // 메인 티켓 클릭 시 Gongcha section으로 부드럽게 이동하기
-    $('.white .circle').click(function(){
+    $('.white').click(function(){
         $('html, body').animate({scrollTop : $('.Gongcha').offset().top}, 400);
     });
 
-    // PC 메뉴 클릭시 부드럽게 이동하기
-    $('.active1').click(function(){
+    // 모바일, 탭, PC 메뉴 클릭시 부드럽게 이동하기
+    $('.menuGo1, .active1').click(function(){
         $('html, body').animate({scrollTop : $('.Gongcha').offset().top}, 400);
     });
-    $('.active2').click(function(){
+    $('.menuGo2, .active2').click(function(){
         $('html, body').animate({scrollTop : $('.Starbucks').offset().top}, 400);
     });
-    $('.active3').click(function(){
+    $('.menuGo3, .active3').click(function(){
         $('html, body').animate({scrollTop : $('.UI').offset().top}, 400);
     });
-    $('.active4').click(function(){
+    $('.menuGo4, .active4').click(function(){
         $('html, body').animate({scrollTop : $('.Me').offset().top}, 400);
     });
 
