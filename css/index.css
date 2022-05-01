@@ -385,6 +385,7 @@ section.none{display: none;}
         text-align: center;
         padding: 7px 0;
         transition: all 0.4s;
+        margin: 3px;
     }
     /* 판넬 디자인 1개의 버튼 */
     .section .section-ticket .two .button-one{
@@ -444,8 +445,9 @@ section.none{display: none;}
         height: 100%;
     }
 
-    /* uiux modal */
-    .modal{
+    /* modal */
+    .modal,
+    .modal2{
         position: fixed;
         top: 0;
         left: 0;
@@ -455,10 +457,12 @@ section.none{display: none;}
         background: rgba(0,0,0,0.4);
         z-index: 9;
     }
-    .modal.show{
+    .modal.show,
+    .modal2.show{
         display: block;
     }
-    .modal .modal_body{
+    .modal .modal_body,
+    .modal2 .modal_body{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -468,7 +472,8 @@ section.none{display: none;}
         overflow: hidden;
         overflow-y: auto;
     }
-    .modal .modal_body img{
+    .modal .modal_body img,
+    .modal2 .modal_body img{
         width: 100%;
         border-radius: 10px;
     }

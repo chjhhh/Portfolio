@@ -66,7 +66,9 @@ menuGo4.addEventListener('click', function(){
 // UI/UX modal
 const body = document.querySelector('body');
 const modal = document.querySelector('.modal');
+const modal2 = document.querySelector('.modal2');
 const open = document.querySelector('.open');
+const open2 = document.querySelector('.open2');
 
 open.addEventListener('click', function(e){
     e.preventDefault();
@@ -82,6 +84,25 @@ modal.addEventListener('click', function(e){
         modal.classList.toggle('show');
 
         if(!modal.classList.contains('show')){
+            body.style.overflow = 'auto';
+        }
+    }
+});
+
+open2.addEventListener('click', function(e){
+    e.preventDefault();
+    modal2.classList.toggle('show');
+
+    if(modal2.classList.contains('show')){
+        body.style.overflow = 'hidden';
+    }
+});
+
+modal2.addEventListener('click', function(e){
+    if(e.target === modal2){
+        modal2.classList.toggle('show');
+
+        if(!modal2.classList.contains('show')){
             body.style.overflow = 'auto';
         }
     }
