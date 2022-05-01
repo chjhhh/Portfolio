@@ -35,15 +35,31 @@ const menuGo4 = document.querySelector('.menuGo4');
 
 menuGo1.addEventListener('click', function(){
     moMenu.classList.add('hide');
+    // 햄버거 메뉴 x 없애기
+    toggle1.classList.remove('active');
+    toggle2.classList.remove('active');
+    toggle3.classList.remove('active');
 });
 menuGo2.addEventListener('click', function(){
     moMenu.classList.add('hide');
+    // 햄버거 메뉴 x 없애기
+    toggle1.classList.remove('active');
+    toggle2.classList.remove('active');
+    toggle3.classList.remove('active');
 });
 menuGo3.addEventListener('click', function(){
     moMenu.classList.add('hide');
+    // 햄버거 메뉴 x 없애기
+    toggle1.classList.remove('active');
+    toggle2.classList.remove('active');
+    toggle3.classList.remove('active');
 });
 menuGo4.addEventListener('click', function(){
     moMenu.classList.add('hide');
+    // 햄버거 메뉴 x 없애기
+    toggle1.classList.remove('active');
+    toggle2.classList.remove('active');
+    toggle3.classList.remove('active');
 });
 
 
