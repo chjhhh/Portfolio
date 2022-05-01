@@ -25,7 +25,7 @@ img{display: block;}
 .hidden{display: none;}
 
 /* 완성되지 않은 작품 안 보이도록 */
-.Clone{display: none;}
+section.none{display: none;}
 
 
 @media all and (min-width:375px){
