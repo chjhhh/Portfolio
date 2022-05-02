@@ -133,6 +133,9 @@ section.none{display: none;}
     /* .mo-menu.hide{
         right: -100%;
     } */
+    /* .mo-menu a.menuGo0.color{
+        color: #6868AC;
+    }
     .mo-menu a.menuGo1.color{
         color: #6868AC;
     }
@@ -143,6 +146,9 @@ section.none{display: none;}
         color: #6868AC;
     }
     .mo-menu a.menuGo4.color{
+        color: #6868AC;
+    } */
+    .mo-menu a.color{
         color: #6868AC;
     }
     
@@ -640,6 +646,7 @@ section.none{display: none;}
         margin: 0 40px;
         color: #1E1E1E;
     }
+    /* 컬러 js */
     header .pc-menu h3.color{
         color: #6868AC;
     }

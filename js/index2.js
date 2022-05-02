@@ -52,15 +52,25 @@ $(document).ready(function(){
     // 스크롤바 움직일 때 각 티켓 section에 그림자 추가, 삭제
     $(window).on('scroll', function(){
         let scroll = $(this).scrollTop();
+        let first = $('.first').offset().top;
         let Gongcha = $('.Gongcha').offset().top;
         let Starbucks = $('.Starbucks').offset().top;
         let UI = $('.UI').offset().top;
         let Me = $('.Me').offset().top;
 
-
+        if(scroll >= first){
+            // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
+            // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo0, .active0').addClass('color').css({'font-weight' : 'bold'})
+            $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
+            $('.menuGo4, .active4').removeClass('color').css({'font-weight' : 'none'})
+        }
         if(scroll >= Gongcha){
             // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
             // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo0, .active0').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo1, .active1').addClass('color').css({'font-weight' : 'bold'})
             $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
@@ -75,6 +85,7 @@ $(document).ready(function(){
         if(scroll >= Starbucks){
             // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
             // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo0, .active0').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo2, .active2').addClass('color').css({'font-weight' : 'bold'})
             $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
@@ -89,6 +100,7 @@ $(document).ready(function(){
         if(scroll >= UI){
             // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
             // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo0, .active0').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo3, .active3').addClass('color').css({'font-weight' : 'bold'})
@@ -103,6 +115,7 @@ $(document).ready(function(){
         if(scroll >= Me){
             // 모바일, 탭 메뉴 스크롤 시 글자 색상 변경 .menuGo
             // pc menu 클릭 시 색상 변경 .active
+            $('.menuGo0, .active0').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo1, .active1').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo2, .active2').removeClass('color').css({'font-weight' : 'none'})
             $('.menuGo3, .active3').removeClass('color').css({'font-weight' : 'none'})
