@@ -87,23 +87,24 @@ section.none{display: none;}
         margin: 5px 0;
     }
     /* .menu-btn toggle js */
-    .toggle1.active{
+    /* 햄버거 메뉴 */
+    /* .toggle1.active{
         transform: translateY(5px) rotate(-47deg);
     }
     .toggle2.active{opacity: 0;}
     .toggle3.active{
         transform: translateY(-9px) rotate(47deg);
-    }
+    } */
 
     /* mobile 메뉴 */
     .mo-menu{
         /* display: none; */
-        width: 100%;
+        width: 70%;
         height: 100%;
         background: #E6E5E1;
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -70%;
         z-index: 9;
         transition: all 0.6s ease-in-out;
     }
@@ -129,9 +130,9 @@ section.none{display: none;}
     .mo-menu.show{
         right: 0;
     }
-    .mo-menu.hide{
+    /* .mo-menu.hide{
         right: -100%;
-    }
+    } */
     .mo-menu a.menuGo1.color{
         color: #6868AC;
     }

@@ -31,6 +31,9 @@ $(document).ready(function(){
     });
 
     // 모바일, 탭, PC 메뉴 클릭시 부드럽게 이동하기
+    $('.menuGo0, .active0').click(function(){
+        $('html, body').animate({scrollTop : $('.first').offset().top}, 400);
+    });
     $('.menuGo1, .active1').click(function(){
         $('html, body').animate({scrollTop : $('.Gongcha').offset().top}, 400);
     });
